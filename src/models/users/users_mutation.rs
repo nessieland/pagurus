@@ -46,6 +46,6 @@ impl UsersMutation {
         diesel::insert_into(users::table)
             .values(&new_user)
             .get_result::<User>(&connection)
-            .expect("Error saying user")
+            .expect("Error saving user")
     }
 }

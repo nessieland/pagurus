@@ -8,7 +8,7 @@ type UsersQuery {
 }
 
 type UsersMutation {
-    createUser(username: String!, display_name: String, password: String!, email: String!): User!
+    createUser(username: String!, display_name: String, password: String!, email: String!): [User]!
 }
 
 type User {
