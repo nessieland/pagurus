@@ -1,0 +1,21 @@
+schema {
+    query: UsersQuery,
+    mutation: UsersMutation
+}
+
+type UsersQuery {
+    getUser(id: Int!): User!
+}
+
+type UsersMutation {
+    createUser(username: String!, display_name: String, password: String!, email: String!): User!
+}
+
+type User {
+    id: Int!
+    username: String!
+    displayName: String!
+    password: String
+    email: String!
+    created_at: String!
+}
